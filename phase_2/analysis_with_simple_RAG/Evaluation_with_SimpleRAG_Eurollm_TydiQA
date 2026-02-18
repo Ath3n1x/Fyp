@@ -20,14 +20,13 @@ from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 warnings.filterwarnings("ignore")
-
 # Author: Swathi
 # =============================================================================
 # CONFIG
 # =============================================================================
 class Config:
-    HF_TOKEN: str = " " # <-- Add your huggingface token here
-    MODEL_NAME: str = "CohereForAI/aya-23-8B"
+    HF_TOKEN: str = " "  #<-- ENTER YOUR HUGGINGFACE TOKEN
+    MODEL_NAME: str = "utter-project/EuroLLM-9B-Instruct"
     USE_CHAT_TEMPLATE: bool = True
 
     RETRIEVER_NAME: str = "BAAI/bge-m3"
