@@ -1,0 +1,1194 @@
+{
+  "config": {
+    "model": "utter-project/EuroLLM-9B-Instruct",
+    "langs": [
+      "arabic",
+      "bengali",
+      "english",
+      "finnish",
+      "indonesian",
+      "japanese",
+      "korean",
+      "russian",
+      "swahili",
+      "telugu",
+      "thai"
+    ],
+    "strategies": [
+      "minimal",
+      "explicit_en",
+      "explicit_native",
+      "strict"
+    ],
+    "samples": 200
+  },
+  "evaluation": {
+    "minimal": {
+      "arabic": {
+        "language_match_rate": 0.99,
+        "script_consistency": 0.7295001650942179,
+        "evidence_usage": 0.8962126055374868,
+        "hallucination": 0.10378739446251323,
+        "exact_match": 0.0,
+        "f1_score": 0.055413985468690044,
+        "transfer_rate": 0.005,
+        "bertscore_P": 0.5044006705284119,
+        "bertscore_R": 0.6869943141937256,
+        "bertscore_F1": 0.579724133014679,
+        "mean_length": 231.84,
+        "median_length": 168.0
+      },
+      "bengali": {
+        "language_match_rate": 0.995,
+        "script_consistency": 0.7859015108172231,
+        "evidence_usage": 0.9593674086382963,
+        "hallucination": 0.035632591361703714,
+        "exact_match": 0.0,
+        "f1_score": 0.10334498131651372,
+        "transfer_rate": 0.0,
+        "bertscore_P": 0.6184248328208923,
+        "bertscore_R": 0.6451019644737244,
+        "bertscore_F1": 0.6299294829368591,
+        "mean_length": 38.715,
+        "median_length": 13.0
+      },
+      "english": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.7786220324051358,
+        "evidence_usage": 0.9448357963376484,
+        "hallucination": 0.05516420366235165,
+        "exact_match": 0.0,
+        "f1_score": 0.05537398626717926,
+        "transfer_rate": 0.01,
+        "bertscore_P": 0.4870358407497406,
+        "bertscore_R": 0.6825982928276062,
+        "bertscore_F1": 0.5661426782608032,
+        "mean_length": 213.6,
+        "median_length": 185.5
+      },
+      "finnish": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.822001378180447,
+        "evidence_usage": 0.9102932684276454,
+        "hallucination": 0.08970673157235474,
+        "exact_match": 0.0,
+        "f1_score": 0.07060192587983671,
+        "transfer_rate": 0.015,
+        "bertscore_P": 0.4903829097747803,
+        "bertscore_R": 0.6965749263763428,
+        "bertscore_F1": 0.5733252167701721,
+        "mean_length": 170.215,
+        "median_length": 141.0
+      },
+      "indonesian": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.8053844371522939,
+        "evidence_usage": 0.919814507238201,
+        "hallucination": 0.08018549276179901,
+        "exact_match": 0.0,
+        "f1_score": 0.06210073981790512,
+        "transfer_rate": 0.01,
+        "bertscore_P": 0.49825018644332886,
+        "bertscore_R": 0.6790262460708618,
+        "bertscore_F1": 0.5720263719558716,
+        "mean_length": 193.25,
+        "median_length": 123.5
+      },
+      "japanese": {
+        "language_match_rate": 0.975,
+        "script_consistency": 0.7450503418875268,
+        "evidence_usage": 0.9589529014248047,
+        "hallucination": 0.03104709857519521,
+        "exact_match": 0.0,
+        "f1_score": 0.05615748894092748,
+        "transfer_rate": 0.0,
+        "bertscore_P": 0.5200898051261902,
+        "bertscore_R": 0.6228060722351074,
+        "bertscore_F1": 0.5653825998306274,
+        "mean_length": 204.255,
+        "median_length": 63.0
+      },
+      "korean": {
+        "language_match_rate": 0.995,
+        "script_consistency": 0.615476408652819,
+        "evidence_usage": 0.9724563821416919,
+        "hallucination": 0.027543617858308035,
+        "exact_match": 0.0,
+        "f1_score": 0.048201709240891316,
+        "transfer_rate": 0.0,
+        "bertscore_P": 0.5209314227104187,
+        "bertscore_R": 0.6542646884918213,
+        "bertscore_F1": 0.5778995156288147,
+        "mean_length": 484.43,
+        "median_length": 63.0
+      },
+      "russian": {
+        "language_match_rate": 0.995,
+        "script_consistency": 0.7576466138619957,
+        "evidence_usage": 0.9073351887832319,
+        "hallucination": 0.09266481121676798,
+        "exact_match": 0.0,
+        "f1_score": 0.051801770306374076,
+        "transfer_rate": 0.01,
+        "bertscore_P": 0.4735482335090637,
+        "bertscore_R": 0.6652519106864929,
+        "bertscore_F1": 0.5509190559387207,
+        "mean_length": 187.21,
+        "median_length": 163.5
+      },
+      "swahili": {
+        "language_match_rate": 0.995,
+        "script_consistency": 0.780254771427013,
+        "evidence_usage": 0.8913722105017521,
+        "hallucination": 0.10362778949824797,
+        "exact_match": 0.0,
+        "f1_score": 0.022312173718113556,
+        "transfer_rate": 0.0,
+        "bertscore_P": 0.4399299919605255,
+        "bertscore_R": 0.6352476477622986,
+        "bertscore_F1": 0.5169951319694519,
+        "mean_length": 283.685,
+        "median_length": 267.5
+      },
+      "telugu": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.6256165530608934,
+        "evidence_usage": 0.9593607826517737,
+        "hallucination": 0.0406392173482263,
+        "exact_match": 0.0,
+        "f1_score": 0.10582827472024188,
+        "transfer_rate": 0.015,
+        "bertscore_P": 0.6093155145645142,
+        "bertscore_R": 0.6126943826675415,
+        "bertscore_F1": 0.6096833348274231,
+        "mean_length": 13.485,
+        "median_length": 7.0
+      },
+      "thai": {
+        "language_match_rate": 0.99,
+        "script_consistency": 0.8593018849313938,
+        "evidence_usage": 0.9812006762356282,
+        "hallucination": 0.018799323764371684,
+        "exact_match": 0.0,
+        "f1_score": 0.1861911405737637,
+        "transfer_rate": 0.005,
+        "bertscore_P": 0.5753517746925354,
+        "bertscore_R": 0.6277105212211609,
+        "bertscore_F1": 0.598240077495575,
+        "mean_length": 144.23,
+        "median_length": 39.0
+      }
+    },
+    "explicit_en": {
+      "arabic": {
+        "language_match_rate": 0.995,
+        "script_consistency": 0.7211943897050523,
+        "evidence_usage": 0.8592175553949464,
+        "hallucination": 0.1407824446050535,
+        "exact_match": 0.0,
+        "f1_score": 0.046632892492104665,
+        "transfer_rate": 0.005,
+        "bertscore_P": 0.501784086227417,
+        "bertscore_R": 0.6820217967033386,
+        "bertscore_F1": 0.5760400295257568,
+        "mean_length": 236.58,
+        "median_length": 166.5
+      },
+      "bengali": {
+        "language_match_rate": 0.995,
+        "script_consistency": 0.771403898328638,
+        "evidence_usage": 0.9575915139797673,
+        "hallucination": 0.04240848602023283,
+        "exact_match": 0.0,
+        "f1_score": 0.10921720463198381,
+        "transfer_rate": 0.005,
+        "bertscore_P": 0.6168854236602783,
+        "bertscore_R": 0.644971489906311,
+        "bertscore_F1": 0.6291361451148987,
+        "mean_length": 38.385,
+        "median_length": 12.0
+      },
+      "english": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.781788319647913,
+        "evidence_usage": 0.9199100018177455,
+        "hallucination": 0.08008999818225447,
+        "exact_match": 0.0,
+        "f1_score": 0.04654187531102519,
+        "transfer_rate": 0.005,
+        "bertscore_P": 0.4822966456413269,
+        "bertscore_R": 0.6745299696922302,
+        "bertscore_F1": 0.5603951811790466,
+        "mean_length": 218.595,
+        "median_length": 190.5
+      },
+      "finnish": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.8247835446402277,
+        "evidence_usage": 0.8702825052993672,
+        "hallucination": 0.12971749470063276,
+        "exact_match": 0.0,
+        "f1_score": 0.06071570344969073,
+        "transfer_rate": 0.015,
+        "bertscore_P": 0.48565590381622314,
+        "bertscore_R": 0.6911805868148804,
+        "bertscore_F1": 0.5684421062469482,
+        "mean_length": 175.39,
+        "median_length": 142.0
+      },
+      "indonesian": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.8071532247848071,
+        "evidence_usage": 0.8741113664983301,
+        "hallucination": 0.12588863350166993,
+        "exact_match": 0.0,
+        "f1_score": 0.05643308259186885,
+        "transfer_rate": 0.005,
+        "bertscore_P": 0.4931904673576355,
+        "bertscore_R": 0.6780059337615967,
+        "bertscore_F1": 0.5682076215744019,
+        "mean_length": 198.97,
+        "median_length": 128.5
+      },
+      "japanese": {
+        "language_match_rate": 0.975,
+        "script_consistency": 0.742833704573882,
+        "evidence_usage": 0.9618531968769395,
+        "hallucination": 0.033146803123060495,
+        "exact_match": 0.0,
+        "f1_score": 0.054675519002898215,
+        "transfer_rate": 0.0,
+        "bertscore_P": 0.5202205777168274,
+        "bertscore_R": 0.6208245754241943,
+        "bertscore_F1": 0.5645350813865662,
+        "mean_length": 206.36,
+        "median_length": 64.0
+      },
+      "korean": {
+        "language_match_rate": 0.995,
+        "script_consistency": 0.6210103611857106,
+        "evidence_usage": 0.968471036229642,
+        "hallucination": 0.03152896377035812,
+        "exact_match": 0.0,
+        "f1_score": 0.04989470760288857,
+        "transfer_rate": 0.0,
+        "bertscore_P": 0.5200567841529846,
+        "bertscore_R": 0.6584818959236145,
+        "bertscore_F1": 0.5790907144546509,
+        "mean_length": 488.285,
+        "median_length": 63.0
+      },
+      "russian": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.7356398722982866,
+        "evidence_usage": 0.8746560596038955,
+        "hallucination": 0.12534394039610458,
+        "exact_match": 0.0,
+        "f1_score": 0.05002930463799776,
+        "transfer_rate": 0.005,
+        "bertscore_P": 0.47045886516571045,
+        "bertscore_R": 0.6659944653511047,
+        "bertscore_F1": 0.549494206905365,
+        "mean_length": 192.19,
+        "median_length": 164.0
+      },
+      "swahili": {
+        "language_match_rate": 0.995,
+        "script_consistency": 0.780953135164977,
+        "evidence_usage": 0.86089387242466,
+        "hallucination": 0.13410612757533993,
+        "exact_match": 0.0,
+        "f1_score": 0.023521925891551044,
+        "transfer_rate": 0.0,
+        "bertscore_P": 0.43900957703590393,
+        "bertscore_R": 0.639157772064209,
+        "bertscore_F1": 0.5181881785392761,
+        "mean_length": 290.015,
+        "median_length": 275.0
+      },
+      "telugu": {
+        "language_match_rate": 0.99,
+        "script_consistency": 0.6396970993192393,
+        "evidence_usage": 0.9453406444344367,
+        "hallucination": 0.044659355565563226,
+        "exact_match": 0.0,
+        "f1_score": 0.09836328842099185,
+        "transfer_rate": 0.01,
+        "bertscore_P": 0.6017329692840576,
+        "bertscore_R": 0.6071453094482422,
+        "bertscore_F1": 0.6031346321105957,
+        "mean_length": 13.805,
+        "median_length": 7.0
+      },
+      "thai": {
+        "language_match_rate": 0.99,
+        "script_consistency": 0.8456556869120813,
+        "evidence_usage": 0.9755458719990093,
+        "hallucination": 0.024454128000990637,
+        "exact_match": 0.0,
+        "f1_score": 0.18946912175386316,
+        "transfer_rate": 0.0,
+        "bertscore_P": 0.5746487379074097,
+        "bertscore_R": 0.629087507724762,
+        "bertscore_F1": 0.5984550714492798,
+        "mean_length": 146.625,
+        "median_length": 39.0
+      }
+    },
+    "explicit_native": {
+      "arabic": {
+        "language_match_rate": 0.995,
+        "script_consistency": 0.7070382061975312,
+        "evidence_usage": 0.8598300947878437,
+        "hallucination": 0.1401699052121564,
+        "exact_match": 0.0,
+        "f1_score": 0.05455003775886797,
+        "transfer_rate": 0.005,
+        "bertscore_P": 0.5032444000244141,
+        "bertscore_R": 0.6864922046661377,
+        "bertscore_F1": 0.5787690281867981,
+        "mean_length": 234.25,
+        "median_length": 167.0
+      },
+      "bengali": {
+        "language_match_rate": 0.995,
+        "script_consistency": 0.7676474076006659,
+        "evidence_usage": 0.9643156061262714,
+        "hallucination": 0.03568439387372863,
+        "exact_match": 0.0,
+        "f1_score": 0.10920468070634523,
+        "transfer_rate": 0.005,
+        "bertscore_P": 0.617150068283081,
+        "bertscore_R": 0.6448813080787659,
+        "bertscore_F1": 0.6291100382804871,
+        "mean_length": 38.48,
+        "median_length": 13.0
+      },
+      "english": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.7791897596050348,
+        "evidence_usage": 0.9033615283675508,
+        "hallucination": 0.0966384716324491,
+        "exact_match": 0.0,
+        "f1_score": 0.05281334359650366,
+        "transfer_rate": 0.01,
+        "bertscore_P": 0.4855188727378845,
+        "bertscore_R": 0.6796513199806213,
+        "bertscore_F1": 0.5639494061470032,
+        "mean_length": 214.485,
+        "median_length": 188.5
+      },
+      "finnish": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.8199162436429117,
+        "evidence_usage": 0.8437444689131666,
+        "hallucination": 0.15625553108683346,
+        "exact_match": 0.0,
+        "f1_score": 0.06972114863902357,
+        "transfer_rate": 0.02,
+        "bertscore_P": 0.48834991455078125,
+        "bertscore_R": 0.6973115801811218,
+        "bertscore_F1": 0.5721650719642639,
+        "mean_length": 173.705,
+        "median_length": 144.5
+      },
+      "indonesian": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.8037546620932704,
+        "evidence_usage": 0.8491479842637397,
+        "hallucination": 0.15085201573626025,
+        "exact_match": 0.0,
+        "f1_score": 0.05920326376206994,
+        "transfer_rate": 0.005,
+        "bertscore_P": 0.49156391620635986,
+        "bertscore_R": 0.6762287020683289,
+        "bertscore_F1": 0.5666955709457397,
+        "mean_length": 199.06,
+        "median_length": 129.0
+      },
+      "japanese": {
+        "language_match_rate": 0.98,
+        "script_consistency": 0.750783923061923,
+        "evidence_usage": 0.9622983273585568,
+        "hallucination": 0.03270167264144323,
+        "exact_match": 0.0,
+        "f1_score": 0.055567870961127135,
+        "transfer_rate": 0.0,
+        "bertscore_P": 0.5185450911521912,
+        "bertscore_R": 0.6242004036903381,
+        "bertscore_F1": 0.5647292137145996,
+        "mean_length": 204.045,
+        "median_length": 63.0
+      },
+      "korean": {
+        "language_match_rate": 0.995,
+        "script_consistency": 0.6112279913066855,
+        "evidence_usage": 0.9686377704275688,
+        "hallucination": 0.031362229572431205,
+        "exact_match": 0.0,
+        "f1_score": 0.04992031543417192,
+        "transfer_rate": 0.0,
+        "bertscore_P": 0.5211235284805298,
+        "bertscore_R": 0.6576550006866455,
+        "bertscore_F1": 0.5792434811592102,
+        "mean_length": 486.52,
+        "median_length": 62.0
+      },
+      "russian": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.7170919955627342,
+        "evidence_usage": 0.8418863209343399,
+        "hallucination": 0.1581136790656601,
+        "exact_match": 0.0,
+        "f1_score": 0.0589498071476827,
+        "transfer_rate": 0.01,
+        "bertscore_P": 0.4740544259548187,
+        "bertscore_R": 0.6710004210472107,
+        "bertscore_F1": 0.5534055829048157,
+        "mean_length": 188.76,
+        "median_length": 162.5
+      },
+      "swahili": {
+        "language_match_rate": 0.995,
+        "script_consistency": 0.7790501117097096,
+        "evidence_usage": 0.857458807715714,
+        "hallucination": 0.137541192284286,
+        "exact_match": 0.0,
+        "f1_score": 0.022375175907617874,
+        "transfer_rate": 0.0,
+        "bertscore_P": 0.43926939368247986,
+        "bertscore_R": 0.6393836140632629,
+        "bertscore_F1": 0.5183221101760864,
+        "mean_length": 288.7,
+        "median_length": 275.0
+      },
+      "telugu": {
+        "language_match_rate": 0.995,
+        "script_consistency": 0.6344314708854545,
+        "evidence_usage": 0.9445523514722228,
+        "hallucination": 0.05044764852777711,
+        "exact_match": 0.0,
+        "f1_score": 0.09806758439568472,
+        "transfer_rate": 0.01,
+        "bertscore_P": 0.6073522567749023,
+        "bertscore_R": 0.6117253303527832,
+        "bertscore_F1": 0.6082889437675476,
+        "mean_length": 13.62,
+        "median_length": 7.0
+      },
+      "thai": {
+        "language_match_rate": 0.99,
+        "script_consistency": 0.8548729163394885,
+        "evidence_usage": 0.9763847532903388,
+        "hallucination": 0.023615246709661225,
+        "exact_match": 0.0,
+        "f1_score": 0.1854013634147239,
+        "transfer_rate": 0.005,
+        "bertscore_P": 0.5734533071517944,
+        "bertscore_R": 0.6262111067771912,
+        "bertscore_F1": 0.5965907573699951,
+        "mean_length": 145.745,
+        "median_length": 39.0
+      }
+    },
+    "strict": {
+      "arabic": {
+        "language_match_rate": 0.995,
+        "script_consistency": 0.7008970951842488,
+        "evidence_usage": 0.852045705513422,
+        "hallucination": 0.14795429448657793,
+        "exact_match": 0.0,
+        "f1_score": 0.04941544132462166,
+        "transfer_rate": 0.005,
+        "bertscore_P": 0.5004923343658447,
+        "bertscore_R": 0.6880974769592285,
+        "bertscore_F1": 0.5774076581001282,
+        "mean_length": 238.365,
+        "median_length": 173.0
+      },
+      "bengali": {
+        "language_match_rate": 0.99,
+        "script_consistency": 0.7732909634770884,
+        "evidence_usage": 0.952836659117613,
+        "hallucination": 0.04216334088238718,
+        "exact_match": 0.0,
+        "f1_score": 0.10332703267941896,
+        "transfer_rate": 0.0,
+        "bertscore_P": 0.6142849326133728,
+        "bertscore_R": 0.6435514688491821,
+        "bertscore_F1": 0.6270531415939331,
+        "mean_length": 38.13,
+        "median_length": 13.0
+      },
+      "english": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.781322113720766,
+        "evidence_usage": 0.9021040493745422,
+        "hallucination": 0.09789595062545775,
+        "exact_match": 0.0,
+        "f1_score": 0.05462431989770824,
+        "transfer_rate": 0.005,
+        "bertscore_P": 0.4851204752922058,
+        "bertscore_R": 0.6836735010147095,
+        "bertscore_F1": 0.5653054714202881,
+        "mean_length": 217.77,
+        "median_length": 191.5
+      },
+      "finnish": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.8241235250509652,
+        "evidence_usage": 0.854628201643487,
+        "hallucination": 0.14537179835651298,
+        "exact_match": 0.0,
+        "f1_score": 0.06320051311776063,
+        "transfer_rate": 0.02,
+        "bertscore_P": 0.48491981625556946,
+        "bertscore_R": 0.6967176795005798,
+        "bertscore_F1": 0.5696150064468384,
+        "mean_length": 177.96,
+        "median_length": 146.5
+      },
+      "indonesian": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.805764337034143,
+        "evidence_usage": 0.8474491750535723,
+        "hallucination": 0.15255082494642763,
+        "exact_match": 0.0,
+        "f1_score": 0.05208543183652815,
+        "transfer_rate": 0.0,
+        "bertscore_P": 0.48937636613845825,
+        "bertscore_R": 0.6773526072502136,
+        "bertscore_F1": 0.5653191804885864,
+        "mean_length": 200.985,
+        "median_length": 132.5
+      },
+      "japanese": {
+        "language_match_rate": 0.98,
+        "script_consistency": 0.7354046586215282,
+        "evidence_usage": 0.959464772185228,
+        "hallucination": 0.030535227814772047,
+        "exact_match": 0.0,
+        "f1_score": 0.059067379407626026,
+        "transfer_rate": 0.0,
+        "bertscore_P": 0.522869884967804,
+        "bertscore_R": 0.6257723569869995,
+        "bertscore_F1": 0.5679926872253418,
+        "mean_length": 203.79,
+        "median_length": 63.0
+      },
+      "korean": {
+        "language_match_rate": 0.99,
+        "script_consistency": 0.6013934196374999,
+        "evidence_usage": 0.9586124801217436,
+        "hallucination": 0.03638751987825641,
+        "exact_match": 0.0,
+        "f1_score": 0.04644652012745313,
+        "transfer_rate": 0.0,
+        "bertscore_P": 0.5184407234191895,
+        "bertscore_R": 0.656889796257019,
+        "bertscore_F1": 0.5772033333778381,
+        "mean_length": 486.53,
+        "median_length": 62.0
+      },
+      "russian": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.7168955991148082,
+        "evidence_usage": 0.8507994737043127,
+        "hallucination": 0.14920052629568725,
+        "exact_match": 0.0,
+        "f1_score": 0.050268644654584624,
+        "transfer_rate": 0.005,
+        "bertscore_P": 0.471341997385025,
+        "bertscore_R": 0.6669232845306396,
+        "bertscore_F1": 0.5500635504722595,
+        "mean_length": 191.17,
+        "median_length": 163.5
+      },
+      "swahili": {
+        "language_match_rate": 0.995,
+        "script_consistency": 0.7809122188346092,
+        "evidence_usage": 0.8444331038594206,
+        "hallucination": 0.15056689614057955,
+        "exact_match": 0.0,
+        "f1_score": 0.025004596285977128,
+        "transfer_rate": 0.0,
+        "bertscore_P": 0.43414950370788574,
+        "bertscore_R": 0.639369010925293,
+        "bertscore_F1": 0.514621376991272,
+        "mean_length": 293.365,
+        "median_length": 283.0
+      },
+      "telugu": {
+        "language_match_rate": 1.0,
+        "script_consistency": 0.6110046670945889,
+        "evidence_usage": 0.9505702060172575,
+        "hallucination": 0.044429793982742494,
+        "exact_match": 0.0,
+        "f1_score": 0.09786983391154205,
+        "transfer_rate": 0.005,
+        "bertscore_P": 0.6101787090301514,
+        "bertscore_R": 0.6137362718582153,
+        "bertscore_F1": 0.6104843616485596,
+        "mean_length": 13.445,
+        "median_length": 7.0
+      },
+      "thai": {
+        "language_match_rate": 0.98,
+        "script_consistency": 0.8397973309762878,
+        "evidence_usage": 0.9706335481817905,
+        "hallucination": 0.029366451818209564,
+        "exact_match": 0.0,
+        "f1_score": 0.17562910191014147,
+        "transfer_rate": 0.005,
+        "bertscore_P": 0.5718792676925659,
+        "bertscore_R": 0.6220536828041077,
+        "bertscore_F1": 0.5938831567764282,
+        "mean_length": 145.48,
+        "median_length": 39.0
+      }
+    }
+  },
+  "ci": {
+    "minimal": {
+      "arabic": {
+        "f1_score_ci": {
+          "mean": 0.055413985468690044,
+          "lo": 0.04374687980269271,
+          "hi": 0.06847012177650098
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "bengali": {
+        "f1_score_ci": {
+          "mean": 0.10334498131651372,
+          "lo": 0.08824270761323479,
+          "hi": 0.11796721981272548
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "english": {
+        "f1_score_ci": {
+          "mean": 0.05537398626717926,
+          "lo": 0.042614840268903435,
+          "hi": 0.06890080828159269
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "finnish": {
+        "f1_score_ci": {
+          "mean": 0.07060192587983671,
+          "lo": 0.05721099251147758,
+          "hi": 0.08387144933510896
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "indonesian": {
+        "f1_score_ci": {
+          "mean": 0.06210073981790512,
+          "lo": 0.04901928472756365,
+          "hi": 0.07718743679496065
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "japanese": {
+        "f1_score_ci": {
+          "mean": 0.05615748894092748,
+          "lo": 0.04661486525759224,
+          "hi": 0.0660354099835085
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "korean": {
+        "f1_score_ci": {
+          "mean": 0.048201709240891316,
+          "lo": 0.04001508400118689,
+          "hi": 0.056768317246180325
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "russian": {
+        "f1_score_ci": {
+          "mean": 0.051801770306374076,
+          "lo": 0.04035698808553059,
+          "hi": 0.06564887955704879
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "swahili": {
+        "f1_score_ci": {
+          "mean": 0.022312173718113556,
+          "lo": 0.016778444533153844,
+          "hi": 0.02864938823450056
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "telugu": {
+        "f1_score_ci": {
+          "mean": 0.10582827472024188,
+          "lo": 0.08596720461346995,
+          "hi": 0.12625181220342588
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "thai": {
+        "f1_score_ci": {
+          "mean": 0.1861911405737637,
+          "lo": 0.16894815102248253,
+          "hi": 0.2014725183536104
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      }
+    },
+    "explicit_en": {
+      "arabic": {
+        "f1_score_ci": {
+          "mean": 0.046632892492104665,
+          "lo": 0.0370853812760693,
+          "hi": 0.05769538226055766
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "bengali": {
+        "f1_score_ci": {
+          "mean": 0.10921720463198381,
+          "lo": 0.09325378676082488,
+          "hi": 0.12574109536068487
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "english": {
+        "f1_score_ci": {
+          "mean": 0.04654187531102519,
+          "lo": 0.03675925082478562,
+          "hi": 0.058013544297580176
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "finnish": {
+        "f1_score_ci": {
+          "mean": 0.06071570344969073,
+          "lo": 0.047775838065558025,
+          "hi": 0.07505543433453207
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "indonesian": {
+        "f1_score_ci": {
+          "mean": 0.05643308259186885,
+          "lo": 0.04567693920117182,
+          "hi": 0.06970569504631556
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "japanese": {
+        "f1_score_ci": {
+          "mean": 0.054675519002898215,
+          "lo": 0.045482267241255835,
+          "hi": 0.06376958899241164
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "korean": {
+        "f1_score_ci": {
+          "mean": 0.04989470760288857,
+          "lo": 0.041543813921120214,
+          "hi": 0.05821056924585526
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "russian": {
+        "f1_score_ci": {
+          "mean": 0.05002930463799776,
+          "lo": 0.03985080526495231,
+          "hi": 0.06153427770246176
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "swahili": {
+        "f1_score_ci": {
+          "mean": 0.023521925891551044,
+          "lo": 0.018391873195342356,
+          "hi": 0.029563999489224144
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "telugu": {
+        "f1_score_ci": {
+          "mean": 0.09836328842099185,
+          "lo": 0.0780724638085602,
+          "hi": 0.11838814145861846
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "thai": {
+        "f1_score_ci": {
+          "mean": 0.18946912175386316,
+          "lo": 0.1706407477870213,
+          "hi": 0.2072493725608227
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      }
+    },
+    "explicit_native": {
+      "arabic": {
+        "f1_score_ci": {
+          "mean": 0.05455003775886797,
+          "lo": 0.043409104792408636,
+          "hi": 0.06708068739942706
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "bengali": {
+        "f1_score_ci": {
+          "mean": 0.10920468070634523,
+          "lo": 0.09287699077779943,
+          "hi": 0.12515851675354192
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "english": {
+        "f1_score_ci": {
+          "mean": 0.05281334359650366,
+          "lo": 0.041203024763716914,
+          "hi": 0.06599242634742328
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "finnish": {
+        "f1_score_ci": {
+          "mean": 0.06972114863902357,
+          "lo": 0.05606829281151491,
+          "hi": 0.08651300137294358
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "indonesian": {
+        "f1_score_ci": {
+          "mean": 0.05920326376206994,
+          "lo": 0.04802198127980941,
+          "hi": 0.0718022108834964
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "japanese": {
+        "f1_score_ci": {
+          "mean": 0.055567870961127135,
+          "lo": 0.04726771466801722,
+          "hi": 0.06486329133210109
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "korean": {
+        "f1_score_ci": {
+          "mean": 0.04992031543417192,
+          "lo": 0.042244135245112065,
+          "hi": 0.05812159665131662
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "russian": {
+        "f1_score_ci": {
+          "mean": 0.0589498071476827,
+          "lo": 0.045623455732469786,
+          "hi": 0.07261753029513592
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "swahili": {
+        "f1_score_ci": {
+          "mean": 0.022375175907617874,
+          "lo": 0.017079088904007944,
+          "hi": 0.02744879994728338
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "telugu": {
+        "f1_score_ci": {
+          "mean": 0.09806758439568472,
+          "lo": 0.0803490131665286,
+          "hi": 0.11635067300362874
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "thai": {
+        "f1_score_ci": {
+          "mean": 0.1854013634147239,
+          "lo": 0.16862467623786165,
+          "hi": 0.20136474784606262
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      }
+    },
+    "strict": {
+      "arabic": {
+        "f1_score_ci": {
+          "mean": 0.04941544132462166,
+          "lo": 0.03877650895579773,
+          "hi": 0.061203840273959496
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "bengali": {
+        "f1_score_ci": {
+          "mean": 0.10332703267941896,
+          "lo": 0.08746563109431156,
+          "hi": 0.11897820573732798
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "english": {
+        "f1_score_ci": {
+          "mean": 0.05462431989770824,
+          "lo": 0.04242889359005743,
+          "hi": 0.06803075932675098
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "finnish": {
+        "f1_score_ci": {
+          "mean": 0.06320051311776063,
+          "lo": 0.04981938522899879,
+          "hi": 0.07765138988159137
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "indonesian": {
+        "f1_score_ci": {
+          "mean": 0.05208543183652815,
+          "lo": 0.04165875426510208,
+          "hi": 0.06330618090427381
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "japanese": {
+        "f1_score_ci": {
+          "mean": 0.059067379407626026,
+          "lo": 0.05025410575933672,
+          "hi": 0.06873636415573717
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "korean": {
+        "f1_score_ci": {
+          "mean": 0.04644652012745313,
+          "lo": 0.0395642078974592,
+          "hi": 0.05408664123931782
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "russian": {
+        "f1_score_ci": {
+          "mean": 0.050268644654584624,
+          "lo": 0.0400635111316691,
+          "hi": 0.06209131909329709
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "swahili": {
+        "f1_score_ci": {
+          "mean": 0.025004596285977128,
+          "lo": 0.01867195512793525,
+          "hi": 0.031968433151947556
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "telugu": {
+        "f1_score_ci": {
+          "mean": 0.09786983391154205,
+          "lo": 0.07991158896121249,
+          "hi": 0.11603937402891139
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      },
+      "thai": {
+        "f1_score_ci": {
+          "mean": 0.17562910191014147,
+          "lo": 0.1595939694641909,
+          "hi": 0.19204740199187526
+        },
+        "exact_match_ci": {
+          "mean": 0.0,
+          "lo": 0.0,
+          "hi": 0.0
+        }
+      }
+    }
+  },
+  "stat_tests": {
+    "language_match_rate": {
+      "minimal_vs_explicit_en": {
+        "t": 0.0,
+        "p": 1.0,
+        "sig": 
